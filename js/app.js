@@ -13,16 +13,10 @@
  * 
  */
 
-/**
- * Define Global Variables
- * 
- */
 
-
+//Functions
 /**
- * End Global Variables
  * Start Helper Functions
- * 
  */
 
 function inViewport(element) {
@@ -40,18 +34,15 @@ function inViewport(element) {
 
 /**
  * End Helper Functions
- * Begin Main Functions
- * 
  */
 
-// build the nav
+
+// Build the nav
 /**
  * 1. Get all sections from landing page
  * 2. Create nav clickable list
  * 3. Automatically update nav
  */
-
-
 
 var sections = document.getElementsByTagName("section");
 for (let section of sections) {
@@ -83,23 +74,7 @@ for (let section of sections) {
     console.log(li);
 }
 
-
-
-// Add class 'active' to section when near top of viewport
-
-
-
-// Scroll to anchor ID using scrollTO event
-
-
 /**
- * End Main Functions
- * Begin Events
- * 
+ * End Build the nav
+ * End Active section
  */
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active

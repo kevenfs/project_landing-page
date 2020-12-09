@@ -1,13 +1,23 @@
 # Landing Page Project
 
-## Table of Contents
+This project was made using the starter project provided. It had some HTML and CSS styling to display a static version of the Landing Page project.
 
-* [Instructions](#instructions)
+## Specifications
 
-## Instructions
+This project demanded that it went from a static project to an interactive one. It required modifying the HTML and CSS files, but primarily the JavaScript file.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## JavaScript file
 
-To get started, open `js/app.js` and start building out the app's functionality
+First, the dynamically built navbar was built by looping over the section ids and getting their information for the datanav for proper display.
+Second, these elements were than moved into an unordered list.
+Third, an active state was then added to the elements in the viewport through an event listener.
+Finally, the viewport was set for the active state to be properly defined.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+
+## CSS file
+
+Not much was done here except changing the color scheme for the active state.
+
+## HTML file
+
+Very little was done here as well other than adding 4 more sections to the main content.
