@@ -41,7 +41,9 @@ function inViewport(element) {
 /**
  * 1. Get all sections from landing page
  * 2. Create nav clickable list
- * 3. Automatically update nav
+ * 3. Add Scroll to
+ * 4. Add Active section
+ * 5. Automatically update nav
  */
 
 var sections = document.getElementsByTagName("section");
@@ -53,6 +55,16 @@ for (let section of sections) {
     li.innerHTML = `
                     <a class="menu__link" href="#${sectionId}">${sectionDataNav}</a>
                 `;
+
+    // Scroll to anchor ID using scrollTO event
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
     // Listen for the scroll event
     document.addEventListener('scroll', event => {
@@ -76,5 +88,6 @@ for (let section of sections) {
 
 /**
  * End Build the nav
+ * End Scroll to
  * End Active section
  */

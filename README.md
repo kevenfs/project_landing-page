@@ -10,7 +10,8 @@ This project demanded that it went from a static project to an interactive one. 
 
 First, the dynamically built navbar was built by looping over the section ids and getting their information for the datanav for proper display.
 Second, these elements were than moved into an unordered list.
-Third, an active state was then added to the elements in the viewport through an event listener.
+Third, a smooth scrolling motion was added when a navbar item is clicked.
+Fourth, an active state was then added to the elements in the viewport through an event listener.
 Finally, the viewport was set for the active state to be properly defined.
 
 
